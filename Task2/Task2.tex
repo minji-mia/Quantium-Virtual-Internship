@@ -1,0 +1,1112 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[]{Roboto}
+  \setmonofont[]{Consolas}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Quantium Virtual Internship - Retail Strategy and Analytics - Task 2},
+  pdfauthor={Minji Kim},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\title{Quantium Virtual Internship - Retail Strategy and Analytics - Task 2}
+\author{Minji Kim}
+\date{10/23/2020}
+
+\begin{document}
+\maketitle
+
+\hypertarget{solution-for-task-2}{%
+\section{Solution for Task 2}\label{solution-for-task-2}}
+
+This file is a solution for the Task 2 of the Quantium Virtual
+Internship.
+
+\hypertarget{load-required-libraries-and-datasets}{%
+\subsection{Load required libraries and
+datasets}\label{load-required-libraries-and-datasets}}
+
+Note that you will need to install these libraries if you have never
+used these before.
+
+\hypertarget{point-the-filepath-to-where-you-have-downloaded-the-datasets-to-and}{%
+\paragraph{Point the filePath to where you have downloaded the datasets
+to
+and}\label{point-the-filepath-to-where-you-have-downloaded-the-datasets-to-and}}
+
+\hypertarget{assign-the-data-files-to-data.tables}{%
+\paragraph{assign the data files to
+data.tables}\label{assign-the-data-files-to-data.tables}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{data <-}\StringTok{ }\KeywordTok{fread}\NormalTok{(}\KeywordTok{paste0}\NormalTok{(}\StringTok{"QVI_data.csv"}\NormalTok{))}
+\CommentTok{#### Set themes for plots}
+\KeywordTok{theme_set}\NormalTok{(}\KeywordTok{theme_bw}\NormalTok{())}
+\KeywordTok{theme_update}\NormalTok{(}\DataTypeTok{plot.title =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{hjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{select-control-stores}{%
+\subsection{Select control stores}\label{select-control-stores}}
+
+The client has selected store numbers 77, 86 and 88 as trial stores and
+want control stores to be established stores that are operational for
+the entire observation period. We would want to match trial stores to
+control stores that are similar to the trial store prior to the trial
+period of Feb 2019 in terms of : - Monthly overall sales revenue -
+Monthly number of customers - Monthly number of transactions per
+customer Let's first create the metrics of interest and filter to stores
+that are present throughout the pre-trial period.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Calculate these measures over time for each store}
+\CommentTok{#### Add a new month ID column in the data with the format yyyymm.}
+\NormalTok{data[, YEARMONTH }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{year}\NormalTok{(DATE)}\OperatorTok{*}\DecValTok{100} \OperatorTok{+}\StringTok{ }\KeywordTok{month}\NormalTok{(DATE)]}
+\NormalTok{data}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##         LYLTY_CARD_NBR       DATE STORE_NBR TXN_ID PROD_NBR
+##      1:           1000 2018-10-17         1      1        5
+##      2:           1002 2018-09-16         1      2       58
+##      3:           1003 2019-03-07         1      3       52
+##      4:           1003 2019-03-08         1      4      106
+##      5:           1004 2018-11-02         1      5       96
+##     ---                                                    
+## 264830:        2370701 2018-12-08        88 240378       24
+## 264831:        2370751 2018-10-01        88 240394       60
+## 264832:        2370961 2018-10-24        88 240480       70
+## 264833:        2370961 2018-10-27        88 240481       65
+## 264834:        2373711 2018-12-14        88 241815       16
+##                                        PROD_NAME PROD_QTY TOT_SALES PACK_SIZE
+##      1:   Natural Chip        Compny SeaSalt175g        2       6.0       175
+##      2:    Red Rock Deli Chikn&Garlic Aioli 150g        1       2.7       150
+##      3:    Grain Waves Sour    Cream&Chives 210G        1       3.6       210
+##      4:   Natural ChipCo      Hony Soy Chckn175g        1       3.0       175
+##      5:           WW Original Stacked Chips 160g        1       1.9       160
+##     ---                                                                      
+## 264830:    Grain Waves         Sweet Chilli 210g        2       7.2       210
+## 264831:     Kettle Tortilla ChpsFeta&Garlic 150g        2       9.2       150
+## 264832:  Tyrrells Crisps     Lightly Salted 165g        2       8.4       165
+## 264833: Old El Paso Salsa   Dip Chnky Tom Ht300g        2      10.2       300
+## 264834: Smiths Crinkle Chips Salt & Vinegar 330g        2      11.4       330
+##              BRAND             LIFESTAGE PREMIUM_CUSTOMER YEARMONTH
+##      1:    NATURAL YOUNG SINGLES/COUPLES          Premium    201810
+##      2:        RRD YOUNG SINGLES/COUPLES       Mainstream    201809
+##      3:    GRNWVES        YOUNG FAMILIES           Budget    201903
+##      4:    NATURAL        YOUNG FAMILIES           Budget    201903
+##      5: WOOLWORTHS OLDER SINGLES/COUPLES       Mainstream    201811
+##     ---                                                            
+## 264830:    GRNWVES        YOUNG FAMILIES       Mainstream    201812
+## 264831:     KETTLE        YOUNG FAMILIES          Premium    201810
+## 264832:   TYRRELLS        OLDER FAMILIES           Budget    201810
+## 264833:        OLD        OLDER FAMILIES           Budget    201810
+## 264834:     SMITHS YOUNG SINGLES/COUPLES       Mainstream    201812
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Next, we define the measure calculations to use during the analysis.}
+\CommentTok{# For each store and month calculate total sales, number of customers, transactions per customer, chips per customer and the average price per unit.}
+\NormalTok{measureOverTime <-}\StringTok{ }\NormalTok{data[, .(}\DataTypeTok{totSales =} \KeywordTok{sum}\NormalTok{(TOT_SALES),}
+                            \DataTypeTok{nCustomers =} \KeywordTok{uniqueN}\NormalTok{(LYLTY_CARD_NBR) ,}
+                            \DataTypeTok{nTxnPerCust =} \KeywordTok{uniqueN}\NormalTok{(TXN_ID)}\OperatorTok{/}\KeywordTok{uniqueN}\NormalTok{(LYLTY_CARD_NBR),}
+                            \DataTypeTok{nChipsPerTxn =} \KeywordTok{sum}\NormalTok{(PROD_QTY)}\OperatorTok{/}\KeywordTok{uniqueN}\NormalTok{(TXN_ID),}
+                            \DataTypeTok{avgPricePerUnit =} \KeywordTok{sum}\NormalTok{(TOT_SALES)}\OperatorTok{/}\KeywordTok{sum}\NormalTok{(PROD_QTY))}
+\NormalTok{                        , by =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"STORE_NBR"}\NormalTok{, }\StringTok{"YEARMONTH"}\NormalTok{)][}\KeywordTok{order}\NormalTok{(STORE_NBR, YEARMONTH) ]}
+\CommentTok{#### Filter to the pre-trial period and stores with full observation periods}
+\NormalTok{storesWithFullObs <-}\StringTok{ }\KeywordTok{unique}\NormalTok{(measureOverTime[, .N, STORE_NBR][N }\OperatorTok{==}\StringTok{ }\DecValTok{12}\NormalTok{, STORE_NBR])}
+\NormalTok{preTrialMeasures <-}\StringTok{ }\NormalTok{measureOverTime[YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902} \OperatorTok{&}\StringTok{ }\NormalTok{STORE_NBR }\OperatorTok{%in%}
+\NormalTok{storesWithFullObs, ]}
+\end{Highlighting}
+\end{Shaded}
+
+Now we need to work out a way of ranking how similar each potential
+control store is to the trial store. We can calculate how correlated the
+performance of each store is to the trial store. Let's write a function
+for this so that we don't have to calculate this for each trial store
+and control store pair.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Create a function to calculate correlation for a measure, looping through each control store.}
+\CommentTok{#### Let's define inputTable as a metric table with potential comparison stores, }
+\CommentTok{#### metricCol as the store metric used to calculate correlation on, and storeComparison}
+\CommentTok{#### as the store number of the trial store.}
+\NormalTok{calculateCorrelation <-}\StringTok{ }\ControlFlowTok{function}\NormalTok{(inputTable, metricCol, storeComparison) \{}
+\NormalTok{  calcCorrTable =}\StringTok{ }\KeywordTok{data.table}\NormalTok{(}\DataTypeTok{Store1 =} \KeywordTok{numeric}\NormalTok{(), }\DataTypeTok{Store2 =} \KeywordTok{numeric}\NormalTok{(), }\DataTypeTok{corr_measure =}
+  \KeywordTok{numeric}\NormalTok{())}
+
+\NormalTok{  storeNumbers <-}\StringTok{ }\KeywordTok{unique}\NormalTok{(inputTable[, STORE_NBR])}
+  
+  \ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in}\NormalTok{ storeNumbers) \{}
+\NormalTok{    calculatedMeasure =}\StringTok{ }\KeywordTok{data.table}\NormalTok{(}\StringTok{"Store1"}\NormalTok{ =}\StringTok{ }\NormalTok{storeComparison,}
+                                   \StringTok{"Store2"}\NormalTok{ =}\StringTok{ }\NormalTok{i,}
+                                   \StringTok{"corr_measure"}\NormalTok{ =}\StringTok{ }\KeywordTok{cor}\NormalTok{( inputTable[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{storeComparison,}
+                                                                     \KeywordTok{eval}\NormalTok{(metricCol)], inputTable[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{i,}
+                                                                                                \KeywordTok{eval}\NormalTok{(metricCol)]))}
+\NormalTok{    calcCorrTable <-}\StringTok{ }\KeywordTok{rbind}\NormalTok{(calcCorrTable, calculatedMeasure)}
+\NormalTok{  \}}
+  \KeywordTok{return}\NormalTok{(calcCorrTable)}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+Apart from correlation, we can also calculate a standardised metric
+based on the absolute difference between the trial store's performance
+and each control store's performance. Let's write a function for this.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Create a function to calculate a standardised magnitude distance for a measure,}
+\CommentTok{#### looping through each control store}
+\NormalTok{calculateMagnitudeDistance <-}\StringTok{ }\ControlFlowTok{function}\NormalTok{(inputTable, metricCol, storeComparison) \{}
+\NormalTok{calcDistTable =}\StringTok{ }\KeywordTok{data.table}\NormalTok{(}\DataTypeTok{Store1 =} \KeywordTok{numeric}\NormalTok{(), }\DataTypeTok{Store2 =} \KeywordTok{numeric}\NormalTok{(), }\DataTypeTok{YEARMONTH =}
+\KeywordTok{numeric}\NormalTok{(), }\DataTypeTok{measure =} \KeywordTok{numeric}\NormalTok{())}
+\NormalTok{  storeNumbers <-}\StringTok{ }\KeywordTok{unique}\NormalTok{(inputTable[, STORE_NBR])}
+  \ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in}\NormalTok{ storeNumbers) \{}
+\NormalTok{  calculatedMeasure =}\StringTok{ }\KeywordTok{data.table}\NormalTok{(}\StringTok{"Store1"}\NormalTok{ =}\StringTok{ }\NormalTok{storeComparison}
+\NormalTok{                                 , }\StringTok{"Store2"}\NormalTok{ =}\StringTok{ }\NormalTok{i}
+\NormalTok{                                 , }\StringTok{"YEARMONTH"}\NormalTok{ =}\StringTok{ }\NormalTok{inputTable[STORE_NBR }\OperatorTok{==}
+\NormalTok{storeComparison, YEARMONTH]}
+\NormalTok{                                 , }\StringTok{"measure"}\NormalTok{ =}\StringTok{ }\KeywordTok{abs}\NormalTok{(inputTable[STORE_NBR }\OperatorTok{==}
+\NormalTok{storeComparison, }\KeywordTok{eval}\NormalTok{(metricCol)]}
+                                                   \OperatorTok{-}\StringTok{ }\NormalTok{inputTable[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{i,}
+\KeywordTok{eval}\NormalTok{(metricCol)])}
+\NormalTok{                                  )}
+\NormalTok{    calcDistTable <-}\StringTok{ }\KeywordTok{rbind}\NormalTok{(calcDistTable, calculatedMeasure)}
+\NormalTok{\}}
+\CommentTok{#### Standardise the magnitude distance so that the measure ranges from 0 to 1}
+\NormalTok{  minMaxDist <-}\StringTok{ }\NormalTok{calcDistTable[, .(}\DataTypeTok{minDist =} \KeywordTok{min}\NormalTok{(measure), }\DataTypeTok{maxDist =} \KeywordTok{max}\NormalTok{(measure)),}
+\NormalTok{by =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Store1"}\NormalTok{, }\StringTok{"YEARMONTH"}\NormalTok{)]}
+\NormalTok{  distTable <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(calcDistTable, minMaxDist, }\DataTypeTok{by =} \KeywordTok{c}\NormalTok{(}\StringTok{"Store1"}\NormalTok{, }\StringTok{"YEARMONTH"}\NormalTok{))}
+\NormalTok{  distTable[, magnitudeMeasure }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\DecValTok{1} \OperatorTok{-}\StringTok{ }\NormalTok{(measure }\OperatorTok{-}\StringTok{ }\NormalTok{minDist)}\OperatorTok{/}\NormalTok{(maxDist }\OperatorTok{-}\StringTok{ }\NormalTok{minDist)]}
+\NormalTok{  finalDistTable <-}\StringTok{ }\NormalTok{distTable[, .(}\DataTypeTok{mag_measure =} \KeywordTok{mean}\NormalTok{(magnitudeMeasure)), by =}
+\NormalTok{.(Store1, Store2)]}
+  \KeywordTok{return}\NormalTok{(finalDistTable)}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+Now let's use the functions to find the control stores! We'll select
+control stores based on how similar monthly total sales in dollar
+amounts and monthly number of customers are to the trial stores. So we
+will need to use our functions to get four scores, two for each of total
+sales and total customers.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Use the function you created to calculate correlations }
+\CommentTok{#### against store 77 using total sales and number of customers.}
+\NormalTok{trial_store <-}\StringTok{ }\DecValTok{77}
+\NormalTok{corr_nSales <-}\StringTok{ }\KeywordTok{calculateCorrelation}\NormalTok{(preTrialMeasures, }\KeywordTok{quote}\NormalTok{(totSales), trial_store)}
+\NormalTok{corr_nSales[}\KeywordTok{order}\NormalTok{(}\OperatorTok{-}\NormalTok{corr_measure)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      Store1 Store2 corr_measure
+##   1:     77     77    1.0000000
+##   2:     77     71    0.9141060
+##   3:     77    233    0.9037742
+##   4:     77    119    0.8676644
+##   5:     77     17    0.8426684
+##  ---                           
+## 256:     77    158   -0.7093194
+## 257:     77     24   -0.7181123
+## 258:     77    244   -0.7745129
+## 259:     77     75   -0.8067514
+## 260:     77    186   -0.8202139
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{corr_nCustomers <-}\StringTok{ }\KeywordTok{calculateCorrelation}\NormalTok{(preTrialMeasures, }\KeywordTok{quote}\NormalTok{(nCustomers), trial_store)}
+\NormalTok{corr_nCustomers[}\KeywordTok{order}\NormalTok{(}\OperatorTok{-}\NormalTok{corr_measure)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      Store1 Store2 corr_measure
+##   1:     77     77    1.0000000
+##   2:     77    233    0.9903578
+##   3:     77    119    0.9832666
+##   4:     77    254    0.9162084
+##   5:     77    113    0.9013480
+##  ---                           
+## 256:     77    102   -0.6525273
+## 257:     77    147   -0.6569333
+## 258:     77    169   -0.6663911
+## 259:     77     54   -0.7606047
+## 260:     77      9   -0.7856990
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Then, use the functions for calculating magnitude.}
+\NormalTok{magnitude_nSales <-}\StringTok{ }\KeywordTok{calculateMagnitudeDistance}\NormalTok{(preTrialMeasures, }\KeywordTok{quote}\NormalTok{(totSales),}
+\NormalTok{trial_store)}
+\NormalTok{magnitude_nCustomers <-}\StringTok{ }\KeywordTok{calculateMagnitudeDistance}\NormalTok{(preTrialMeasures,}
+\KeywordTok{quote}\NormalTok{(nCustomers), trial_store)}
+\end{Highlighting}
+\end{Shaded}
+
+We'll need to combine the all the scores calculated using our function
+to create a composite score to rank on. Let's take a simple average of
+the correlation and magnitude scores for each driver. Note that if we
+consider it more important for the trend of the drivers to be similar,
+we can increase the weight of the correlation score (a simple average
+gives a weight of 0.5 to the corr\_weight) or if we consider the
+absolute size of the drivers to be more important, we can lower the
+weight of the correlation score.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Create a combined score composed of correlation and magnitude, by}
+\CommentTok{#### first merging the correlations table with the magnitude table.}
+\CommentTok{#### A simple average on the scores: 0.5 * corr_measure + 0.5 * mag_measure}
+\NormalTok{corr_weight <-}\StringTok{ }\FloatTok{0.5}
+\NormalTok{score_nSales <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(corr_nSales, magnitude_nSales, }\DataTypeTok{by =} 
+          \KeywordTok{c}\NormalTok{(}\StringTok{"Store1"}\NormalTok{,}\StringTok{"Store2"}\NormalTok{))[, scoreNSales }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{(corr_measure }\OperatorTok{+}\StringTok{ }\NormalTok{mag_measure)}\OperatorTok{/}\DecValTok{2}\NormalTok{ ]}
+\NormalTok{score_nCustomers <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(corr_nCustomers, magnitude_nCustomers, }\DataTypeTok{by =}
+        \KeywordTok{c}\NormalTok{(}\StringTok{"Store1"}\NormalTok{, }\StringTok{"Store2"}\NormalTok{))[, scoreNCust }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{(corr_measure }\OperatorTok{+}\StringTok{ }\NormalTok{mag_measure)}\OperatorTok{/}\DecValTok{2}\NormalTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{score_nSales[}\KeywordTok{order}\NormalTok{(}\OperatorTok{-}\NormalTok{scoreNSales)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      Store1 Store2 corr_measure mag_measure scoreNSales
+##   1:     77     77    1.0000000   1.0000000  1.00000000
+##   2:     77    233    0.9037742   0.9852649  0.94451954
+##   3:     77     41    0.7832319   0.9651401  0.87418598
+##   4:     77     50    0.7638658   0.9731293  0.86849757
+##   5:     77     17    0.8426684   0.8806882  0.86167830
+##  ---                                                   
+## 256:     77    247   -0.6310496   0.5263807 -0.05233446
+## 257:     77     24   -0.7181123   0.5908516 -0.06363035
+## 258:     77    201   -0.4109081   0.2809523 -0.06497786
+## 259:     77     55   -0.6667816   0.4693768 -0.09870241
+## 260:     77     75   -0.8067514   0.3061880 -0.25028171
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{score_nCustomers[}\KeywordTok{order}\NormalTok{(}\OperatorTok{-}\NormalTok{scoreNCust)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      Store1 Store2 corr_measure mag_measure  scoreNCust
+##   1:     77     77    1.0000000   1.0000000  1.00000000
+##   2:     77    233    0.9903578   0.9927733  0.99156555
+##   3:     77    254    0.9162084   0.9371312  0.92666979
+##   4:     77     41    0.8442195   0.9746392  0.90942936
+##   5:     77     84    0.8585712   0.9241818  0.89137652
+##  ---                                                   
+## 256:     77    147   -0.6569333   0.4991028 -0.07891525
+## 257:     77    247   -0.6210342   0.4278646 -0.09658482
+## 258:     77    227   -0.6237974   0.3923204 -0.11573851
+## 259:     77     75   -0.5907354   0.3360498 -0.12734284
+## 260:     77    102   -0.6525273   0.3968462 -0.12784056
+\end{verbatim}
+
+Now we have a score for each of total number of sales and number of
+customers. Let's combine the two via a simple average.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Combine scores across the drivers by first merging our sales scores and customer scores into a single table}
+\NormalTok{score_Control <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(score_nSales, score_nCustomers, }\DataTypeTok{by =} \KeywordTok{c}\NormalTok{(}\StringTok{"Store1"}\NormalTok{,}\StringTok{"Store2"}\NormalTok{))}
+\NormalTok{score_Control[, finalControlScore }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{scoreNSales }\OperatorTok{*}\StringTok{ }\FloatTok{0.5} \OperatorTok{+}\StringTok{ }\NormalTok{scoreNCust }\OperatorTok{*}\StringTok{ }\FloatTok{0.5}\NormalTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{score_Control[}\KeywordTok{order}\NormalTok{(}\OperatorTok{-}\NormalTok{finalControlScore)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      Store1 Store2 corr_measure.x mag_measure.x scoreNSales corr_measure.y
+##   1:     77     77      1.0000000     1.0000000  1.00000000      1.0000000
+##   2:     77    233      0.9037742     0.9852649  0.94451954      0.9903578
+##   3:     77     41      0.7832319     0.9651401  0.87418598      0.8442195
+##   4:     77     17      0.8426684     0.8806882  0.86167830      0.7473078
+##   5:     77    254      0.5771085     0.9227714  0.74993992      0.9162084
+##  ---                                                                      
+## 256:     77     55     -0.6667816     0.4693768 -0.09870241     -0.3954735
+## 257:     77    138     -0.5851740     0.4913360 -0.04691903     -0.5348775
+## 258:     77    247     -0.6310496     0.5263807 -0.05233446     -0.6210342
+## 259:     77    102     -0.5508337     0.4885443 -0.03114471     -0.6525273
+## 260:     77     75     -0.8067514     0.3061880 -0.25028171     -0.5907354
+##      mag_measure.y   scoreNCust finalControlScore
+##   1:     1.0000000  1.000000000        1.00000000
+##   2:     0.9927733  0.991565547        0.96804254
+##   3:     0.9746392  0.909429365        0.89180767
+##   4:     0.9624953  0.854901530        0.85828992
+##   5:     0.9371312  0.926669792        0.83830486
+##  ---                                             
+## 256:     0.3797372 -0.007868115       -0.05328526
+## 257:     0.3874739 -0.073701805       -0.06031042
+## 258:     0.4278646 -0.096584823       -0.07445964
+## 259:     0.3968462 -0.127840565       -0.07949264
+## 260:     0.3360498 -0.127342842       -0.18881227
+\end{verbatim}
+
+The store with the highest score is then selected as the control store
+since it is most similar to the trial store.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Select control stores based on the highest matching store (closest to 1 but}
+\CommentTok{#### not the store itself, i.e. the second ranked highest store)}
+\CommentTok{#### Select the most appropriate control store for trial store 77 by finding the store with the highest final score.}
+\NormalTok{control_store <-}\StringTok{ }\NormalTok{score_Control[Store1 }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store, ][}\KeywordTok{order}\NormalTok{(}\OperatorTok{-}\NormalTok{finalControlScore)][}\DecValTok{2}\NormalTok{, Store2]}
+\NormalTok{control_store}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 233
+\end{verbatim}
+
+Now that we have found a control store, let's check visually if the
+drivers are indeed similar in the period before the trial. We'll look at
+total sales first.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Visual checks on trends based on the drivers}
+\NormalTok{measureOverTimeSales <-}\StringTok{ }\NormalTok{measureOverTime}
+
+\NormalTok{pastSales <-}\StringTok{ }\NormalTok{measureOverTimeSales[, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store,}
+\StringTok{"Trial"}\NormalTok{,}
+                                          \KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store,}
+\StringTok{"Control"}\NormalTok{, }\StringTok{"Other stores"}\NormalTok{))}
+\NormalTok{                              ][, totSales }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{mean}\NormalTok{(totSales), by =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"YEARMONTH"}\NormalTok{,}
+\StringTok{"Store_type"}\NormalTok{)}
+\NormalTok{                              ][, TransactionMonth }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{as.Date}\NormalTok{(}\KeywordTok{paste}\NormalTok{(YEARMONTH }\OperatorTok{%/%}
+\DecValTok{100}\NormalTok{, YEARMONTH }\OperatorTok{%%}\StringTok{ }\DecValTok{100}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DataTypeTok{sep =} \StringTok{"-"}\NormalTok{), }\StringTok{"%Y-%m-%d"}\NormalTok{)}
+\NormalTok{                              ][YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201903}\NormalTok{ , ]}
+\KeywordTok{ggplot}\NormalTok{(pastSales, }\KeywordTok{aes}\NormalTok{(TransactionMonth, totSales, }\DataTypeTok{color =}\NormalTok{ Store_type)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_line}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Month of operation"}\NormalTok{, }\DataTypeTok{y =} \StringTok{"Total sales"}\NormalTok{, }\DataTypeTok{title =} \StringTok{"Total sales by month"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Task2_files/figure-latex/unnamed-chunk-7-1.pdf} Next,
+number of customers.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Conduct visual checks on customer count trends by comparing the trial store }
+\CommentTok{#### to the control store and other stores.}
+\NormalTok{measureOverTimeCusts <-}\StringTok{ }\NormalTok{measureOverTime}
+\NormalTok{pastCustomers <-}\StringTok{ }\NormalTok{measureOverTimeCusts[, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store, }\StringTok{"Trial"}\NormalTok{,}
+                                      \KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store, }\StringTok{"Control"}\NormalTok{, }\StringTok{"Other stores"}\NormalTok{))}
+\NormalTok{][, numberCustomers }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{mean}\NormalTok{(nCustomers), by =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"YEARMONTH"}\NormalTok{, }\StringTok{"Store_type"}\NormalTok{)}
+\NormalTok{][, TransactionMonth }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{as.Date}\NormalTok{(}\KeywordTok{paste}\NormalTok{(YEARMONTH }\OperatorTok{%/%}\StringTok{ }\DecValTok{100}\NormalTok{, YEARMONTH }\OperatorTok{%%}\StringTok{ }\DecValTok{100}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DataTypeTok{sep =} \StringTok{"-"}\NormalTok{), }\StringTok{"%Y-%m-%d"}\NormalTok{)}
+\NormalTok{][YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201903}\NormalTok{ , ]}
+\KeywordTok{ggplot}\NormalTok{(pastCustomers, }\KeywordTok{aes}\NormalTok{(TransactionMonth, numberCustomers, }\DataTypeTok{color =}\NormalTok{ Store_type)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_line}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Month of operation"}\NormalTok{, }\DataTypeTok{y =} \StringTok{"Total number of customers"}\NormalTok{, }\DataTypeTok{title =} \StringTok{"Total number of customers by month"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Task2_files/figure-latex/unnamed-chunk-8-1.pdf} \#\#
+Assessment of trial The trial period goes from the start of February
+2019 to April 2019. We now want to see if there has been an uplift in
+overall chip sales. We'll start with scaling the control store's sales
+to a level similar to control for any differences between the two stores
+outside of the trial period.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Scale pre-trial control sales to match pre-trial trial store sales}
+\NormalTok{scalingFactorForControlSales <-}\StringTok{ }\NormalTok{preTrialMeasures[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store }\OperatorTok{&}
+\NormalTok{YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902}\NormalTok{, }\KeywordTok{sum}\NormalTok{(totSales)]}\OperatorTok{/}\NormalTok{preTrialMeasures[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store }\OperatorTok{&}
+\NormalTok{YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902}\NormalTok{, }\KeywordTok{sum}\NormalTok{(totSales)]}
+\CommentTok{#### Apply the scaling factor}
+\NormalTok{measureOverTimeSales <-}\StringTok{ }\NormalTok{measureOverTime}
+\NormalTok{scaledControlSales <-}\StringTok{ }\NormalTok{measureOverTimeSales[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store, ][ ,}
+\NormalTok{controlSales }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{totSales }\OperatorTok{*}\StringTok{ }\NormalTok{scalingFactorForControlSales]}
+\end{Highlighting}
+\end{Shaded}
+
+Now that we have comparable sales figures for the control store, we can
+calculate the percentage difference between the scaled control sales and
+the trial store's sales during the trial period.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Calculate the percentage difference between scaled control sales and trial sales}
+\NormalTok{percentageDiff <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(scaledControlSales[, }\KeywordTok{c}\NormalTok{(}\StringTok{"YEARMONTH"}\NormalTok{, }\StringTok{"controlSales"}\NormalTok{)],}
+\NormalTok{                        measureOverTime[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store, }\KeywordTok{c}\NormalTok{(}\StringTok{"totSales"}\NormalTok{, }\StringTok{"YEARMONTH"}\NormalTok{)],}
+                        \DataTypeTok{by =} \StringTok{"YEARMONTH"}\NormalTok{)[, percentageDiff }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{abs}\NormalTok{(controlSales}\OperatorTok{-}\NormalTok{totSales)}\OperatorTok{/}\NormalTok{controlSales]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{percentageDiff }\CommentTok{# between control store sales and trial store sales}
+\end{Highlighting}
+\end{Shaded}
+
+Let's see if the difference is significant!
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### As our null hypothesis is that the trial period is the same as the pre-trial}
+\CommentTok{#### period, let's take the standard deviation based on the scaled percentage difference}
+\CommentTok{#### in the pre-trial period}
+\NormalTok{stdDev <-}\StringTok{ }\KeywordTok{sd}\NormalTok{(percentageDiff[YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902}\NormalTok{ , percentageDiff])}
+\CommentTok{#### Note that there are 8 months in the pre-trial period}
+\CommentTok{#### hence 8 - 1 = 7 degrees of freedom}
+\NormalTok{degreesOfFreedom <-}\StringTok{ }\DecValTok{7}
+\CommentTok{#### We will test with a null hypothesis of there being 0 difference between trial}
+\CommentTok{#### and control stores.}
+\CommentTok{#### Calculate the t-values for the trial months. After that, find the 95th percentile of the t distribution with the appropriate degrees of freedom}
+\CommentTok{#### to check whether the hypothesis is statistically significant.}
+\CommentTok{#### The test statistic here is (x - u)/standard deviation}
+\NormalTok{percentageDiff[, tValue }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{(percentageDiff }\OperatorTok{-}\StringTok{ }\DecValTok{0}\NormalTok{)}\OperatorTok{/}\NormalTok{stdDev}
+\NormalTok{               ][, TransactionMonth }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{as.Date}\NormalTok{(}\KeywordTok{paste}\NormalTok{(YEARMONTH }\OperatorTok{%/%}\StringTok{ }\DecValTok{100}\NormalTok{, YEARMONTH }\OperatorTok{%%}\StringTok{ }\DecValTok{100}\NormalTok{, }\DecValTok{1}\NormalTok{, }
+                                                     \DataTypeTok{sep =} \StringTok{"-"}\NormalTok{), }\StringTok{"%Y-%m-%d"}\NormalTok{)}
+\NormalTok{][YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201905} \OperatorTok{&}\StringTok{ }\NormalTok{YEARMONTH }\OperatorTok{>}\StringTok{ }\DecValTok{201901}\NormalTok{, .(TransactionMonth,tValue)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##    TransactionMonth    tValue
+## 1:       2019-02-01  1.183534
+## 2:       2019-03-01  7.339116
+## 3:       2019-04-01 12.476373
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Find the 95th percentile of the t distribution with the appropriate}
+\CommentTok{#### degrees of freedom to compare against}
+\KeywordTok{qt}\NormalTok{(}\FloatTok{0.95}\NormalTok{, }\DataTypeTok{df =}\NormalTok{ degreesOfFreedom)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 1.894579
+\end{verbatim}
+
+We can observe that the t-value is much larger than the 95th percentile
+value of the t-distribution for March and April - i.e.~the increase in
+sales in the trial store in March and April is statistically greater
+than in the control store. Let's create a more visual version of this by
+plotting the sales of the control store, the sales of the trial stores
+and the 95th percentile value of sales of the control store.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{measureOverTimeSales <-}\StringTok{ }\NormalTok{measureOverTime}
+
+\CommentTok{#### Trial and control store total sales}
+\CommentTok{#### Create new variables Store_type, totSales and TransactionMonth in the data table.}
+\NormalTok{pastSales <-}\StringTok{ }\NormalTok{measureOverTimeSales[, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store, }\StringTok{"Trial"}\NormalTok{,}
+\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store, }\StringTok{"Control"}\NormalTok{, }\StringTok{"Other stores"}\NormalTok{))}
+\NormalTok{][, totSales }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{mean}\NormalTok{(totSales), by =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"YEARMONTH"}\NormalTok{, }\StringTok{"Store_type"}\NormalTok{)}
+\NormalTok{][, TransactionMonth }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{as.Date}\NormalTok{(}\KeywordTok{paste}\NormalTok{(YEARMONTH }\OperatorTok{%/%}\StringTok{ }\DecValTok{100}\NormalTok{, YEARMONTH }\OperatorTok{%%}\StringTok{ }\DecValTok{100}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DataTypeTok{sep =} \StringTok{"-"}\NormalTok{), }\StringTok{"%Y-%m-%d"}\NormalTok{)}
+\NormalTok{][Store_type }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Trial"}\NormalTok{, }\StringTok{"Control"}\NormalTok{), ]}
+
+\CommentTok{#### Control store 95th percentile}
+\NormalTok{pastSales_Controls95 <-}\StringTok{ }\NormalTok{pastSales[Store_type }\OperatorTok{==}\StringTok{ "Control"}\NormalTok{,}
+\NormalTok{ ][, totSales }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{totSales }\OperatorTok{*}\StringTok{ }\NormalTok{(}\DecValTok{1} \OperatorTok{+}\StringTok{ }\NormalTok{stdDev }\OperatorTok{*}\StringTok{ }\DecValTok{2}\NormalTok{)}
+\NormalTok{ ][, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ "Control 95th % confidence}
+\StringTok{interval"}\NormalTok{]}
+
+\CommentTok{#### Control store 5th percentile}
+\NormalTok{pastSales_Controls5 <-}\StringTok{ }\NormalTok{pastSales[Store_type }\OperatorTok{==}\StringTok{ "Control"}\NormalTok{,}
+\NormalTok{ ][, totSales }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{totSales }\OperatorTok{*}\StringTok{ }\NormalTok{(}\DecValTok{1} \OperatorTok{-}\StringTok{ }\NormalTok{stdDev }\OperatorTok{*}\StringTok{ }\DecValTok{2}\NormalTok{)}
+\NormalTok{ ][, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ "Control 5th % confidence}
+\StringTok{interval"}\NormalTok{]}
+\NormalTok{trialAssessment <-}\StringTok{ }\KeywordTok{rbind}\NormalTok{(pastSales, pastSales_Controls95, pastSales_Controls5)}
+
+\CommentTok{#### Plotting these in one nice graph}
+\KeywordTok{ggplot}\NormalTok{(trialAssessment, }\KeywordTok{aes}\NormalTok{(TransactionMonth, totSales, }\DataTypeTok{color =}\NormalTok{ Store_type)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_rect}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ trialAssessment[ YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201905} \OperatorTok{&}\StringTok{ }\NormalTok{YEARMONTH }\OperatorTok{>}\StringTok{ }\DecValTok{201901}\NormalTok{ ,],}
+\KeywordTok{aes}\NormalTok{(}\DataTypeTok{xmin =} \KeywordTok{min}\NormalTok{(TransactionMonth), }\DataTypeTok{xmax =} \KeywordTok{max}\NormalTok{(TransactionMonth), }\DataTypeTok{ymin =} \DecValTok{0}\NormalTok{ , }\DataTypeTok{ymax =}
+\OtherTok{Inf}\NormalTok{, }\DataTypeTok{color =} \OtherTok{NULL}\NormalTok{), }\DataTypeTok{show.legend =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_line}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Month of operation"}\NormalTok{, }\DataTypeTok{y =} \StringTok{"Total sales"}\NormalTok{, }\DataTypeTok{title =} \StringTok{"Total sales by month"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Task2_files/figure-latex/unnamed-chunk-13-1} The
+results show that the trial in store 77 is significantly different to
+its control store in the trial period as the trial store performance
+lies outside the 5\% to 95\% confidence interval of the control store in
+two of the three trial months. Let's have a look at assessing this for
+number of customers as well.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### This would be a repeat of the steps before for total sales}
+\CommentTok{#### Scale pre-trial control customers to match pre-trial trial store customers}
+\CommentTok{#### Compute a scaling factor to align control store customer counts to our trial store.}
+\CommentTok{#### Then, apply the scaling factor to control store customer counts.}
+\CommentTok{#### Finally, calculate the percentage difference between scaled control store customers and trial customers.}
+\NormalTok{scalingFactorForControlCust <-}\StringTok{ }\NormalTok{preTrialMeasures[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store }\OperatorTok{&}
+\NormalTok{YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902}\NormalTok{, }\KeywordTok{sum}\NormalTok{(nCustomers)] }\OperatorTok{/}\StringTok{ }\NormalTok{preTrialMeasures[STORE_NBR }\OperatorTok{==}
+\NormalTok{control_store }\OperatorTok{&}\StringTok{ }\NormalTok{YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902}\NormalTok{, }\KeywordTok{sum}\NormalTok{(nCustomers)]}
+\NormalTok{measureOverTimeCusts <-}\StringTok{ }\NormalTok{measureOverTime}
+\NormalTok{scaledControlCustomers <-}\StringTok{ }\NormalTok{measureOverTimeCusts[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store,}
+\NormalTok{][ , controlCustomers }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{nCustomers }\OperatorTok{*}\StringTok{ }\NormalTok{scalingFactorForControlCust}
+\NormalTok{][, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\NormalTok{trial_store, }\StringTok{"Trial"}\NormalTok{,}
+\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store,}\StringTok{"Control"}\NormalTok{, }\StringTok{"Other stores"}\NormalTok{))]}
+\NormalTok{percentageDiff <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(scaledControlCustomers[, }\KeywordTok{c}\NormalTok{(}\StringTok{"YEARMONTH"}\NormalTok{, }\StringTok{"controlCustomers"}\NormalTok{)],}
+\NormalTok{measureOverTimeCusts[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store,}\KeywordTok{c}\NormalTok{(}\StringTok{"nCustomers"}\NormalTok{, }\StringTok{"YEARMONTH"}\NormalTok{)],}
+\DataTypeTok{by =} \StringTok{"YEARMONTH"}
+\NormalTok{)[, percentageDiff }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{abs}\NormalTok{(controlCustomers}\OperatorTok{-}\NormalTok{nCustomers)}\OperatorTok{/}\NormalTok{controlCustomers]}
+\end{Highlighting}
+\end{Shaded}
+
+Let's again see if the difference is significant visually!
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### As our null hypothesis is that the trial period is the same as the pre-trial }
+\CommentTok{#### period, let's take the standard deviation based on the scaled percentage difference}
+\CommentTok{#### in the pre-trial period}
+\NormalTok{stdDev <-}\StringTok{ }\KeywordTok{sd}\NormalTok{(percentageDiff[YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902}\NormalTok{ , percentageDiff])}
+\NormalTok{degreesOfFreedom <-}\StringTok{ }\DecValTok{7}
+\CommentTok{#### Trial and control store number of customers}
+\NormalTok{pastCustomers <-}\StringTok{ }\NormalTok{measureOverTimeCusts[, nCusts }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{mean}\NormalTok{(nCustomers), by =}
+\KeywordTok{c}\NormalTok{(}\StringTok{"YEARMONTH"}\NormalTok{, }\StringTok{"Store_type"}\NormalTok{)}
+\NormalTok{                            ][Store_type }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Trial"}\NormalTok{, }\StringTok{"Control"}\NormalTok{), ]}
+\CommentTok{#### Control store 95th percentile}
+\NormalTok{pastCustomers_Controls95 <-}\StringTok{ }\NormalTok{pastCustomers[Store_type }\OperatorTok{==}\StringTok{ "Control"}\NormalTok{,}
+\NormalTok{                                ][, nCusts }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{nCusts }\OperatorTok{*}\StringTok{ }\NormalTok{(}\DecValTok{1} \OperatorTok{+}\StringTok{ }\NormalTok{stdDev }\OperatorTok{*}\StringTok{ }\DecValTok{2}\NormalTok{)}
+\NormalTok{                                ][, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ "Control 95th % confidence}
+\StringTok{interval"}\NormalTok{]}
+\CommentTok{#### Control store 5th percentile}
+\NormalTok{pastCustomers_Controls5 <-}\StringTok{ }\NormalTok{pastCustomers[Store_type }\OperatorTok{==}\StringTok{ "Control"}\NormalTok{,}
+\NormalTok{                                ][, nCusts }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{nCusts }\OperatorTok{*}\StringTok{ }\NormalTok{(}\DecValTok{1} \OperatorTok{-}\StringTok{ }\NormalTok{stdDev }\OperatorTok{*}\StringTok{ }\DecValTok{2}\NormalTok{)}
+\NormalTok{                                ][, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ "Control 5th % confidence}
+\StringTok{interval"}\NormalTok{]}
+\NormalTok{trialAssessment <-}\StringTok{ }\KeywordTok{rbind}\NormalTok{(pastCustomers, pastCustomers_Controls95,}
+\NormalTok{pastCustomers_Controls5)}
+\CommentTok{#### Plot everything into one nice graph.}
+\CommentTok{#### geom_rect creates a rectangle in the plot. Use this to highlight the}
+\CommentTok{#### trial period in our graph.}
+\KeywordTok{ggplot}\NormalTok{(trialAssessment, }\KeywordTok{aes}\NormalTok{(TransactionMonth, nCusts, }\DataTypeTok{color =}\NormalTok{ Store_type)) }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{geom_rect}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ trialAssessment[ YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201905} \OperatorTok{&}\StringTok{ }\NormalTok{YEARMONTH }\OperatorTok{>}\StringTok{ }\DecValTok{201901}\NormalTok{ ,],}
+\KeywordTok{aes}\NormalTok{(}\DataTypeTok{xmin =} \KeywordTok{min}\NormalTok{(TransactionMonth), }\DataTypeTok{xmax =} \KeywordTok{max}\NormalTok{(TransactionMonth), }\DataTypeTok{ymin =} \DecValTok{0}\NormalTok{ ,}
+\DataTypeTok{ymax =} \OtherTok{Inf}\NormalTok{, }\DataTypeTok{color =} \OtherTok{NULL}\NormalTok{), }\DataTypeTok{show.legend =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{geom_line}\NormalTok{() }\OperatorTok{+}\StringTok{ }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Month of operation"}\NormalTok{, }\DataTypeTok{y =} \StringTok{"Total number of customers"}\NormalTok{, }\DataTypeTok{title =} \StringTok{"Total number of customers by month"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Task2_files/figure-latex/unnamed-chunk-15-1} Let's
+repeat finding the control store and assessing the impact of the trial
+for each of the other two trial stores. \#\# Trial store 86
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Calculate the metrics below as we did for the first trial store.}
+\NormalTok{measureOverTime <-}\StringTok{ }\NormalTok{data[, .(}\DataTypeTok{totSales =} \KeywordTok{sum}\NormalTok{(TOT_SALES),}
+                            \DataTypeTok{nCustomers =} \KeywordTok{uniqueN}\NormalTok{(LYLTY_CARD_NBR),}
+                            \DataTypeTok{nTxnPerCust =}\NormalTok{ (}\KeywordTok{uniqueN}\NormalTok{(TXN_ID))}\OperatorTok{/}\NormalTok{(}\KeywordTok{uniqueN}\NormalTok{(LYLTY_CARD_NBR)),}
+                            \DataTypeTok{nChipsPerTxn =}\NormalTok{ (}\KeywordTok{sum}\NormalTok{(PROD_QTY))}\OperatorTok{/}\NormalTok{(}\KeywordTok{uniqueN}\NormalTok{(TXN_ID)) , }
+                            \DataTypeTok{avgPricePerUnit =} \KeywordTok{sum}\NormalTok{(TOT_SALES)}\OperatorTok{/}\KeywordTok{sum}\NormalTok{(PROD_QTY) ) , by =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"STORE_NBR"}\NormalTok{, }\StringTok{"YEARMONTH"}\NormalTok{)][}\KeywordTok{order}\NormalTok{(STORE_NBR, YEARMONTH)]}
+
+\CommentTok{#### Use the functions we created earlier to calculate correlations and magnitude for each potential control store}
+\NormalTok{trial_store <-}\StringTok{ }\DecValTok{86}
+\NormalTok{corr_nSales <-}\StringTok{ }\KeywordTok{calculateCorrelation}\NormalTok{(preTrialMeasures, }\KeywordTok{quote}\NormalTok{(totSales),trial_store)}
+\NormalTok{corr_nCustomers <-}\StringTok{ }\KeywordTok{calculateCorrelation}\NormalTok{(preTrialMeasures, }\KeywordTok{quote}\NormalTok{(nCustomers), trial_store)}
+\NormalTok{magnitude_nSales <-}\StringTok{ }\KeywordTok{calculateMagnitudeDistance}\NormalTok{(preTrialMeasures, }\KeywordTok{quote}\NormalTok{(totSales), trial_store)}
+\NormalTok{magnitude_nCustomers <-}\StringTok{ }\KeywordTok{calculateMagnitudeDistance}\NormalTok{(preTrialMeasures, }\KeywordTok{quote}\NormalTok{(nCustomers), trial_store)}
+\CommentTok{#### Now, create a combined score composed of correlation and magnitude}
+\NormalTok{corr_weight <-}\StringTok{ }\FloatTok{0.5}
+\NormalTok{score_nSales <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(corr_nSales, magnitude_nSales, }\DataTypeTok{by =} \KeywordTok{c}\NormalTok{(}\StringTok{"Store1"}\NormalTok{, }\StringTok{"Store2"}\NormalTok{))[ , scoreNSales }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{(corr_measure }\OperatorTok{+}\StringTok{ }\NormalTok{mag_measure)}\OperatorTok{/}\DecValTok{2}\NormalTok{]}
+\NormalTok{score_nCustomers <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(corr_nCustomers, magnitude_nCustomers, }\DataTypeTok{by =} \KeywordTok{c}\NormalTok{(}\StringTok{"Store1"}\NormalTok{, }\StringTok{"Store2"}\NormalTok{))[ , scoreNCust }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{(corr_measure }\OperatorTok{+}\StringTok{ }\NormalTok{mag_measure)}\OperatorTok{/}\DecValTok{2}\NormalTok{]}
+
+\CommentTok{#### Finally, combine scores across the drivers using a simple average.}
+\NormalTok{score_Control <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(score_nSales, score_nCustomers, }\DataTypeTok{by =} \KeywordTok{c}\NormalTok{(}\StringTok{"Store1"}\NormalTok{,}\StringTok{"Store2"}\NormalTok{))}
+\NormalTok{score_Control[, finalControlScore }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{scoreNSales }\OperatorTok{*}\StringTok{ }\FloatTok{0.5} \OperatorTok{+}\StringTok{ }\NormalTok{scoreNCust }\OperatorTok{*}\StringTok{ }\FloatTok{0.5}\NormalTok{]}
+\CommentTok{#### Select control stores based on the highest matching store}
+\CommentTok{#### (closest to 1 but not the store itself, i.e. the second ranked highest store)}
+\CommentTok{#### Select control store for trial store 86}
+\NormalTok{control_store <-}\StringTok{ }\NormalTok{score_Control[Store1 }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store,}
+\NormalTok{][}\KeywordTok{order}\NormalTok{(}\OperatorTok{-}\NormalTok{finalControlScore)][}\DecValTok{2}\NormalTok{, Store2]}
+\NormalTok{control_store}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 155
+\end{verbatim}
+
+Looks like store 155 will be a control store for trial store 86. Again,
+let's check visually if the drivers are indeed similar in the period
+before the trial. We'll look at total sales first.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Conduct visual checks on trends based on the drivers}
+\NormalTok{measureOverTimeSales <-}\StringTok{ }\NormalTok{measureOverTime}
+\NormalTok{pastSales <-}\StringTok{ }\NormalTok{measureOverTimeSales[, Store_type}\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store, }\StringTok{"Trial"}\NormalTok{, }\KeywordTok{ifelse}\NormalTok{(STORE_NBR}\OperatorTok{==}\StringTok{ }\NormalTok{control_store, }\StringTok{"Control"}\NormalTok{, }\StringTok{"Other stores"}\NormalTok{))][, totSales }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{mean}\NormalTok{(totSales), by =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"YEARMONTH"}\NormalTok{, }\StringTok{"Store_type"}\NormalTok{)][, TransactionMonth}\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{as.Date}\NormalTok{(}\KeywordTok{paste}\NormalTok{(YEARMONTH}\OperatorTok{%/%}\DecValTok{100}\NormalTok{, YEARMONTH}\OperatorTok{%%}\StringTok{ }\DecValTok{100}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DataTypeTok{sep =} \StringTok{"-"}\NormalTok{), }\StringTok{"%Y-%m-%d"}\NormalTok{)][YEARMONTH }\OperatorTok{<}\DecValTok{210903}\NormalTok{] }
+
+\KeywordTok{ggplot}\NormalTok{(pastSales, }\KeywordTok{aes}\NormalTok{(TransactionMonth, totSales, }\DataTypeTok{color =}\NormalTok{ Store_type)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_line}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{linetype =}\NormalTok{ Store_type)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Month of operation"}\NormalTok{, }\DataTypeTok{y =} \StringTok{"Total sales"}\NormalTok{, }\DataTypeTok{title =} \StringTok{"Total sales by month"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Task2_files/figure-latex/unnamed-chunk-17-1.pdf} Great,
+sales are trending in a similar way. Next, number of customers.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Conduct visual checks on trends based on the drivers}
+\NormalTok{measureOverTimeCusts <-}\StringTok{ }\NormalTok{measureOverTime}
+\NormalTok{pastCustomers <-}\StringTok{ }\NormalTok{measureOverTimeCusts[, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store, }\StringTok{"Trial"}\NormalTok{,}
+\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store, }\StringTok{"Control"}\NormalTok{, }\StringTok{"Other stores"}\NormalTok{))}
+\NormalTok{][, numberCustomers }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{mean}\NormalTok{(nCustomers), by =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"YEARMONTH"}\NormalTok{, }\StringTok{"Store_type"}\NormalTok{)}
+\NormalTok{][, TransactionMonth }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{as.Date}\NormalTok{(}\KeywordTok{paste}\NormalTok{(YEARMONTH }\OperatorTok{%/%}
+\StringTok{                                        }\DecValTok{100}\NormalTok{, YEARMONTH }\OperatorTok{%%}\StringTok{ }\DecValTok{100}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DataTypeTok{sep =} \StringTok{"-"}\NormalTok{), }\StringTok{"%Y-%m-%d"}\NormalTok{)}
+\NormalTok{][YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201903}\NormalTok{ , ]}
+
+\KeywordTok{ggplot}\NormalTok{(pastCustomers, }\KeywordTok{aes}\NormalTok{(TransactionMonth, numberCustomers, }\DataTypeTok{color =}\NormalTok{ Store_type)) }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{geom_line}\NormalTok{() }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Month of operation"}\NormalTok{, }\DataTypeTok{y =} \StringTok{"Total number of customers"}\NormalTok{, }\DataTypeTok{title =} \StringTok{"Total number of customers by month"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Task2_files/figure-latex/unnamed-chunk-18-1.pdf} Good,
+the trend in number of customers is also similar. Let's now assess the
+impact of the trial on sales.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Scale pre-trial control sales to match pre-trial trial store sales}
+\NormalTok{scalingFactorForControlSales <-}\StringTok{ }\NormalTok{preTrialMeasures[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store }\OperatorTok{&}
+\NormalTok{YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902}\NormalTok{, }\KeywordTok{sum}\NormalTok{(totSales)]}\OperatorTok{/}\NormalTok{preTrialMeasures[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store }\OperatorTok{&}
+\NormalTok{YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902}\NormalTok{, }\KeywordTok{sum}\NormalTok{(totSales)]}
+\CommentTok{#### Apply the scaling factor}
+\NormalTok{measureOverTimeSales <-}\StringTok{ }\NormalTok{measureOverTime}
+\NormalTok{scaledControlSales <-}\StringTok{ }\NormalTok{measureOverTimeSales[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store, ][ ,}
+\NormalTok{controlSales }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{totSales }\OperatorTok{*}\StringTok{ }\NormalTok{scalingFactorForControlSales]}
+\CommentTok{#### Calculate the percentage difference between scaled control sales and trial sales}
+\CommentTok{#### When calculating percentage difference, remember to use absolute difference}
+\NormalTok{percentageDiff <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(scaledControlSales[, }\KeywordTok{c}\NormalTok{(}\StringTok{"YEARMONTH"}\NormalTok{, }\StringTok{"controlSales"}\NormalTok{)],}
+\NormalTok{measureOverTime[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store, }\KeywordTok{c}\NormalTok{(}\StringTok{"totSales"}\NormalTok{, }\StringTok{"YEARMONTH"}\NormalTok{)],}
+\DataTypeTok{by =} \StringTok{"YEARMONTH"}
+\NormalTok{)[, percentageDiff }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{abs}\NormalTok{(controlSales}\OperatorTok{-}\NormalTok{totSales)}\OperatorTok{/}\NormalTok{controlSales]}
+
+\CommentTok{#### As our null hypothesis is that the trial period is the same as the pre-trial}
+\CommentTok{#### period, let's take the standard deviation based on the scaled percentage difference}
+\CommentTok{#### in the pre-trial period}
+\CommentTok{#### Calculate the standard deviation of percentage differences during the pre-trial period}
+\NormalTok{stdDev <-}\StringTok{ }\KeywordTok{sd}\NormalTok{(percentageDiff[YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902}\NormalTok{ , percentageDiff])}
+\NormalTok{degreesOfFreedom <-}\StringTok{ }\DecValTok{7}
+
+\CommentTok{#### Trial and control store total sales}
+\CommentTok{#### Create a table with sales by store type and month.}
+\CommentTok{#### We only need data for the trial and control store.}
+\NormalTok{measureOverTimeSales <-}\StringTok{ }\NormalTok{measureOverTime}
+\NormalTok{pastSales <-}\StringTok{ }\NormalTok{measureOverTimeSales[, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store, }\StringTok{"Trial"}\NormalTok{,}
+\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store, }\StringTok{"Control"}\NormalTok{, }\StringTok{"Other stores"}\NormalTok{))}
+\NormalTok{][, totSales }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{mean}\NormalTok{(totSales), by =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"YEARMONTH"}\NormalTok{, }\StringTok{"Store_type"}\NormalTok{)}
+\NormalTok{][, TransactionMonth }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{as.Date}\NormalTok{(}\KeywordTok{paste}\NormalTok{(YEARMONTH }\OperatorTok{%/%}\DecValTok{100}\NormalTok{, YEARMONTH }\OperatorTok{%%}\StringTok{ }\DecValTok{100}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DataTypeTok{sep =} \StringTok{"-"}\NormalTok{), }\StringTok{"%Y-%m-%d"}\NormalTok{)}
+\NormalTok{][Store_type }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Trial"}\NormalTok{, }\StringTok{"Control"}\NormalTok{), ]}
+
+\CommentTok{#### Calculate the 5th and 95th percentile for control store sales.}
+\CommentTok{#### The 5th and 95th percentiles can be approximated by using two standard deviations away from the mean.}
+\CommentTok{#### Recall that the variable stdDev earlier calculates standard deviation in percentages, and not dollar sales.}
+\CommentTok{#### Control store 95th percentile}
+\NormalTok{pastSales_Controls95 <-}\StringTok{ }\NormalTok{pastSales[Store_type }\OperatorTok{==}\StringTok{ "Control"}\NormalTok{,}
+\NormalTok{][, totSales }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{totSales }\OperatorTok{*}\StringTok{ }\NormalTok{(}\DecValTok{1} \OperatorTok{+}\StringTok{ }\NormalTok{stdDev }\OperatorTok{*}\StringTok{ }\DecValTok{2}\NormalTok{)}
+\NormalTok{][, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ "Control 95th % confidence interval"}\NormalTok{]}
+
+\CommentTok{#### Control store 5th percentile}
+\NormalTok{pastSales_Controls5 <-}\StringTok{ }\NormalTok{pastSales[Store_type }\OperatorTok{==}\StringTok{ "Control"}\NormalTok{,}
+\NormalTok{][, totSales }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{totSales }\OperatorTok{*}\StringTok{ }\NormalTok{(}\DecValTok{1} \OperatorTok{-}\StringTok{ }\NormalTok{stdDev }\OperatorTok{*}\StringTok{ }\DecValTok{2}\NormalTok{)}
+\NormalTok{][, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ "Control 5th % confidence interval"}\NormalTok{]}
+
+\CommentTok{#### Then, create a combined table with columns from pastSales, pastSales_Controls95 and pastSales_Controls5}
+\NormalTok{trialAssessment <-}\StringTok{ }\KeywordTok{rbind}\NormalTok{(pastSales, pastSales_Controls95, pastSales_Controls5)}
+\CommentTok{#### Plotting these in one nice graph}
+\KeywordTok{ggplot}\NormalTok{(trialAssessment, }\KeywordTok{aes}\NormalTok{(TransactionMonth, totSales, }\DataTypeTok{color =}\NormalTok{ Store_type)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_rect}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ trialAssessment[ YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201905} \OperatorTok{&}\StringTok{ }\NormalTok{YEARMONTH }\OperatorTok{>}\StringTok{ }\DecValTok{201901}\NormalTok{ ,],}
+\KeywordTok{aes}\NormalTok{(}\DataTypeTok{xmin =} \KeywordTok{min}\NormalTok{(TransactionMonth), }\DataTypeTok{xmax =} \KeywordTok{max}\NormalTok{(TransactionMonth), }\DataTypeTok{ymin =} \DecValTok{0}\NormalTok{ , }\DataTypeTok{ymax =}
+\OtherTok{Inf}\NormalTok{, }\DataTypeTok{color =} \OtherTok{NULL}\NormalTok{), }\DataTypeTok{show.legend =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_line}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{linetype =}\NormalTok{ Store_type)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Month of operation"}\NormalTok{, }\DataTypeTok{y =} \StringTok{"Total sales"}\NormalTok{, }\DataTypeTok{title =} \StringTok{"Total sales by month"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Task2_files/figure-latex/unnamed-chunk-19-1} The
+results show that the trial in store 86 is not significantly different
+to its control store in the trial period as the trial store performance
+lies inside the 5\% to 95\% confidence interval of the control store in
+two of the three trial months. Let's have a look at assessing this for
+the number of customers as well.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### This would be a repeat of the steps before for total sales}
+\CommentTok{#### Scale pre-trial control customers to match pre-trial trial store customers}
+\NormalTok{scalingFactorForControlCust <-}\StringTok{ }\NormalTok{preTrialMeasures[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store }\OperatorTok{&}
+\NormalTok{YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902}\NormalTok{, }\KeywordTok{sum}\NormalTok{(nCustomers)]}\OperatorTok{/}\NormalTok{preTrialMeasures[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store }\OperatorTok{&}
+\NormalTok{YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902}\NormalTok{, }\KeywordTok{sum}\NormalTok{(nCustomers)]}
+\CommentTok{#### Apply the scaling factor}
+\NormalTok{measureOverTimeCusts <-}\StringTok{ }\NormalTok{measureOverTime}
+\NormalTok{scaledControlCustomers <-}\StringTok{ }\NormalTok{measureOverTimeCusts[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store,}
+\NormalTok{                                            ][ , controlCustomers }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{nCustomers}
+\OperatorTok{*}\StringTok{ }\NormalTok{scalingFactorForControlCust}
+\NormalTok{                                            ][, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{ifelse}\NormalTok{(STORE_NBR}
+\OperatorTok{==}\StringTok{ }\NormalTok{trial_store, }\StringTok{"Trial"}\NormalTok{,}
+                                      \KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store,}
+\StringTok{"Control"}\NormalTok{, }\StringTok{"Other stores"}\NormalTok{))}
+\NormalTok{]}
+\CommentTok{#### Calculate the percentage difference between scaled control sales and trial sales}
+\NormalTok{percentageDiff <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(scaledControlCustomers[, }\KeywordTok{c}\NormalTok{(}\StringTok{"YEARMONTH"}\NormalTok{,}
+\StringTok{"controlCustomers"}\NormalTok{)],}
+\NormalTok{                        measureOverTime[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store, }\KeywordTok{c}\NormalTok{(}\StringTok{"nCustomers"}\NormalTok{,}
+\StringTok{"YEARMONTH"}\NormalTok{)],}
+                        \DataTypeTok{by =} \StringTok{"YEARMONTH"}
+\NormalTok{                        )[, percentageDiff }\OperatorTok{:}\ErrorTok{=}
+\KeywordTok{abs}\NormalTok{(controlCustomers}\OperatorTok{-}\NormalTok{nCustomers)}\OperatorTok{/}\NormalTok{controlCustomers]}
+\CommentTok{#### As our null hypothesis is that the trial period is the same as the pre-trial }
+\CommentTok{#### period, let's take the standard deviation based on the scaled percentage difference}
+\CommentTok{#### in the pre-trial period}
+\NormalTok{stdDev <-}\StringTok{ }\KeywordTok{sd}\NormalTok{(percentageDiff[YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902}\NormalTok{ , percentageDiff])}
+\NormalTok{degreesOfFreedom <-}\StringTok{ }\DecValTok{7}
+\CommentTok{#### Trial and control store number of customers}
+\NormalTok{pastCustomers <-}\StringTok{ }\NormalTok{measureOverTimeCusts[, nCusts }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{mean}\NormalTok{(nCustomers), by =}
+\KeywordTok{c}\NormalTok{(}\StringTok{"YEARMONTH"}\NormalTok{, }\StringTok{"Store_type"}\NormalTok{)}
+\NormalTok{                              ][Store_type }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Trial"}\NormalTok{, }\StringTok{"Control"}\NormalTok{), ]}
+\CommentTok{#### Control store 95th percentile}
+\NormalTok{pastCustomers_Controls95 <-}\StringTok{ }\NormalTok{pastCustomers[Store_type }\OperatorTok{==}\StringTok{ "Control"}\NormalTok{,}
+\NormalTok{                                ][, nCusts }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{nCusts }\OperatorTok{*}\StringTok{ }\NormalTok{(}\DecValTok{1} \OperatorTok{+}\StringTok{ }\NormalTok{stdDev }\OperatorTok{*}\StringTok{ }\DecValTok{2}\NormalTok{)}
+\NormalTok{                                ][, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ "Control 95th % confidence}
+\StringTok{interval"}\NormalTok{]}
+\CommentTok{#### Control store 5th percentile}
+\NormalTok{pastCustomers_Controls5 <-}\StringTok{ }\NormalTok{pastCustomers[Store_type }\OperatorTok{==}\StringTok{ "Control"}\NormalTok{,}
+\NormalTok{                              ][, nCusts }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{nCusts }\OperatorTok{*}\StringTok{ }\NormalTok{(}\DecValTok{1} \OperatorTok{-}\StringTok{ }\NormalTok{stdDev }\OperatorTok{*}\StringTok{ }\DecValTok{2}\NormalTok{)}
+\NormalTok{                              ][, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ "Control 5th % confidence}
+\StringTok{interval"}\NormalTok{]}
+\NormalTok{trialAssessment <-}\StringTok{ }\KeywordTok{rbind}\NormalTok{(pastCustomers, pastCustomers_Controls95,}
+\NormalTok{pastCustomers_Controls5)}
+\CommentTok{#### Plotting these in one nice graph}
+\KeywordTok{ggplot}\NormalTok{(trialAssessment, }\KeywordTok{aes}\NormalTok{(TransactionMonth, nCusts, }\DataTypeTok{color =}\NormalTok{ Store_type)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_rect}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ trialAssessment[ YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201905} \OperatorTok{&}\StringTok{ }\NormalTok{YEARMONTH }\OperatorTok{>}\StringTok{ }\DecValTok{201901}\NormalTok{ ,],}
+\KeywordTok{aes}\NormalTok{(}\DataTypeTok{xmin =} \KeywordTok{min}\NormalTok{(TransactionMonth), }\DataTypeTok{xmax =} \KeywordTok{max}\NormalTok{(TransactionMonth), }\DataTypeTok{ymin =} \DecValTok{0}\NormalTok{ , }\DataTypeTok{ymax =}
+\OtherTok{Inf}\NormalTok{, }\DataTypeTok{color =} \OtherTok{NULL}\NormalTok{), }\DataTypeTok{show.legend =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_line}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Month of operation"}\NormalTok{, }\DataTypeTok{y =} \StringTok{"Total number of customers"}\NormalTok{, }\DataTypeTok{title =} \StringTok{"Total}
+\StringTok{number of customers by month"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Task2_files/figure-latex/unnamed-chunk-20-1} It looks
+like the number of customers is significantly higher in all of the three
+months. This seems to suggest that the trial had a significant impact on
+increasing the number of customers in trial store 86 but as we saw,
+sales were not significantly higher. We should check with the Category
+Manager if there were special deals in the trial store that were may
+have resulted in lower prices, impacting the results. \#\# Trial store
+88
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Conduct the analysis on trial store 88.}
+\NormalTok{measureOverTime <-}\StringTok{ }\NormalTok{data[, .(}\DataTypeTok{totSales =} \KeywordTok{sum}\NormalTok{(TOT_SALES),}
+\DataTypeTok{nCustomers =} \KeywordTok{uniqueN}\NormalTok{(LYLTY_CARD_NBR),}
+\DataTypeTok{nTxnPerCust =} \KeywordTok{uniqueN}\NormalTok{(TXN_ID)}\OperatorTok{/}\KeywordTok{uniqueN}\NormalTok{(LYLTY_CARD_NBR),}
+\DataTypeTok{nChipsPerTxn =} \KeywordTok{sum}\NormalTok{(PROD_QTY)}\OperatorTok{/}\KeywordTok{uniqueN}\NormalTok{(TXN_ID),}
+\DataTypeTok{avgPricePerUnit =} \KeywordTok{sum}\NormalTok{(TOT_SALES)}\OperatorTok{/}\KeywordTok{sum}\NormalTok{(PROD_QTY))}
+\NormalTok{, by =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"STORE_NBR"}\NormalTok{, }\StringTok{"YEARMONTH"}\NormalTok{)][}\KeywordTok{order}\NormalTok{(STORE_NBR, YEARMONTH)]}
+\CommentTok{#### Use the functions from earlier to calculate the correlation of the sales and number of customers of each potential control store to the trial store}
+\NormalTok{trial_store <-}\StringTok{ }\DecValTok{88}
+\NormalTok{corr_nSales <-}\StringTok{ }\KeywordTok{calculateCorrelation}\NormalTok{(preTrialMeasures, }\KeywordTok{quote}\NormalTok{(totSales),trial_store)}
+\NormalTok{corr_nCustomers <-}\StringTok{ }\KeywordTok{calculateCorrelation}\NormalTok{(preTrialMeasures, }\KeywordTok{quote}\NormalTok{(nCustomers), trial_store)}
+\CommentTok{#### Use the functions from earlier to calculate the magnitude distance of the sales and number of customers of each potential control store to the trial store}
+\NormalTok{magnitude_nSales <-}\StringTok{ }\KeywordTok{calculateMagnitudeDistance}\NormalTok{(preTrialMeasures, }\KeywordTok{quote}\NormalTok{(totSales), trial_store)}
+\NormalTok{magnitude_nCustomers <-}\StringTok{ }\KeywordTok{calculateMagnitudeDistance}\NormalTok{(preTrialMeasures, }\KeywordTok{quote}\NormalTok{(nCustomers), trial_store)}
+\CommentTok{#### Create a combined score composed of correlation and magnitude by merging the correlations table and the magnitudes table, for each driver.}
+\NormalTok{corr_weight <-}\StringTok{ }\FloatTok{0.5}
+\NormalTok{score_nSales <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(corr_nSales, magnitude_nSales, }\DataTypeTok{by =} \KeywordTok{c}\NormalTok{(}\StringTok{"Store1"}\NormalTok{, }\StringTok{"Store2"}\NormalTok{))[ , scoreNSales }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{(corr_measure }\OperatorTok{+}\StringTok{ }\NormalTok{mag_measure)}\OperatorTok{/}\DecValTok{2}\NormalTok{]}
+\NormalTok{score_nCustomers <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(corr_nCustomers, magnitude_nCustomers, }\DataTypeTok{by =} \KeywordTok{c}\NormalTok{(}\StringTok{"Store1"}\NormalTok{, }\StringTok{"Store2"}\NormalTok{))[ , scoreNCust }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{(corr_measure }\OperatorTok{+}\StringTok{ }\NormalTok{mag_measure)}\OperatorTok{/}\DecValTok{2}\NormalTok{]}
+
+\CommentTok{#### Combine scores across the drivers by merging sales scores and customer scores, and compute a final combined score.}
+\NormalTok{score_Control <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(score_nSales, score_nCustomers, }\DataTypeTok{by =} \KeywordTok{c}\NormalTok{(}\StringTok{"Store1"}\NormalTok{,}\StringTok{"Store2"}\NormalTok{))}
+\NormalTok{score_Control[, finalControlScore }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{scoreNSales }\OperatorTok{*}\StringTok{ }\FloatTok{0.5} \OperatorTok{+}\StringTok{ }\NormalTok{scoreNCust }\OperatorTok{*}\StringTok{ }\FloatTok{0.5}\NormalTok{]}
+\CommentTok{#### Select control stores based on the highest matching store}
+\CommentTok{#### (closest to 1 but not the store itself, i.e. the second ranked highest store)}
+\CommentTok{#### Select control store for trial store 88}
+\NormalTok{control_store <-}\StringTok{ }\NormalTok{score_Control[Store1 }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store, ][}\KeywordTok{order}\NormalTok{(}\OperatorTok{-}\NormalTok{finalControlScore)][}\DecValTok{2}\NormalTok{, Store2]}
+\NormalTok{control_store}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 237
+\end{verbatim}
+
+We've now found store 237 to be a suitable control store for trial store
+88. Again, let's check visually if the drivers are indeed similar in the
+period before the trial. We'll look at total sales first.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Visual checks on trends based on the drivers}
+\CommentTok{#### For the period before the trial, create a graph with total sales of the trial }
+\CommentTok{#### store for each month, compared to the control store and other stores.}
+\NormalTok{measureOverTimeSales <-}\StringTok{ }\NormalTok{measureOverTime}
+\NormalTok{pastSales <-}\StringTok{ }\NormalTok{measureOverTimeSales[, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store, }\StringTok{"Trial"}\NormalTok{,}
+\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store, }\StringTok{"Control"}\NormalTok{, }\StringTok{"Other stores"}\NormalTok{))}
+\NormalTok{][, totSales }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{mean}\NormalTok{(totSales), by =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"YEARMONTH"}\NormalTok{,}\StringTok{"Store_type"}\NormalTok{)}
+\NormalTok{][, TransactionMonth }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{as.Date}\NormalTok{(}\KeywordTok{paste}\NormalTok{(YEARMONTH }\OperatorTok{%/%}\StringTok{ }\DecValTok{100}\NormalTok{, YEARMONTH }\OperatorTok{%%}\StringTok{ }\DecValTok{100}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DataTypeTok{sep =} \StringTok{"-"}\NormalTok{), }\StringTok{"%Y-%m-%d"}\NormalTok{)}
+\NormalTok{][YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201903}\NormalTok{ , ]}
+\KeywordTok{ggplot}\NormalTok{(pastSales, }\KeywordTok{aes}\NormalTok{(TransactionMonth, totSales, }\DataTypeTok{color =}\NormalTok{ Store_type)) }\OperatorTok{+}
+\KeywordTok{geom_line}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{linetype =}\NormalTok{ Store_type)) }\OperatorTok{+}
+\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Month of operation"}\NormalTok{, }\DataTypeTok{y =} \StringTok{"Total sales"}\NormalTok{, }\DataTypeTok{title =} \StringTok{"Total sales by month"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Task2_files/figure-latex/unnamed-chunk-22-1.pdf} Great,
+the trial and control stores have similar total sales. Next, number of
+customers.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Visual checks on trends based on the drivers}
+\CommentTok{#### For the period before the trial, create a graph with customer counts of the}
+\CommentTok{#### trial store for each month, compared to the control store and other stores.}
+\NormalTok{measureOverTimeCusts <-}\StringTok{ }\NormalTok{measureOverTime}
+\NormalTok{pastCustomers <-}\StringTok{ }\NormalTok{measureOverTimeCusts[, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store, }\StringTok{"Trial"}\NormalTok{,}
+\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store, }\StringTok{"Control"}\NormalTok{, }\StringTok{"Other stores"}\NormalTok{))}
+\NormalTok{][, numberCustomers }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{mean}\NormalTok{(nCustomers), by =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"YEARMONTH"}\NormalTok{, }\StringTok{"Store_type"}\NormalTok{)}
+\NormalTok{][, TransactionMonth }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{as.Date}\NormalTok{(}\KeywordTok{paste}\NormalTok{(YEARMONTH }\OperatorTok{%/%}
+\StringTok{                                        }\DecValTok{100}\NormalTok{, YEARMONTH }\OperatorTok{%%}\StringTok{ }\DecValTok{100}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DataTypeTok{sep =} \StringTok{"-"}\NormalTok{), }\StringTok{"%Y-%m-%d"}\NormalTok{)}
+\NormalTok{][YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201903}\NormalTok{ , ]}
+\KeywordTok{ggplot}\NormalTok{(pastCustomers, }\KeywordTok{aes}\NormalTok{(TransactionMonth, numberCustomers, }\DataTypeTok{color =}\NormalTok{ Store_type)) }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{geom_line}\NormalTok{() }\OperatorTok{+}\StringTok{ }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Month of operation"}\NormalTok{, }\DataTypeTok{y =} \StringTok{"Total number of customers"}\NormalTok{, }\DataTypeTok{title =} \StringTok{"Total number of customers by month"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Task2_files/figure-latex/unnamed-chunk-23-1.pdf} Total
+number of customers of the control and trial stores are also similar.
+Let's now assess the impact of the trial on sales.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### Scale pre-trial control store sales to match pre-trial trial store sales}
+\NormalTok{scalingFactorForControlSales <-}\StringTok{ }\NormalTok{preTrialMeasures[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store }\OperatorTok{&}
+\NormalTok{YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902}\NormalTok{, }\KeywordTok{sum}\NormalTok{(totSales)]}\OperatorTok{/}\NormalTok{preTrialMeasures[STORE_NBR }\OperatorTok{==}
+\NormalTok{control_store }\OperatorTok{&}\StringTok{ }\NormalTok{YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902}\NormalTok{, }\KeywordTok{sum}\NormalTok{(totSales)]}
+
+\CommentTok{#### Apply the scaling factor}
+\NormalTok{measureOverTimeSales <-}\StringTok{ }\NormalTok{measureOverTime}
+\NormalTok{scaledControlSales <-}\StringTok{ }\NormalTok{measureOverTimeSales[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store, ][ ,controlSales }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{totSales }\OperatorTok{*}\StringTok{ }\NormalTok{scalingFactorForControlSales]}
+
+\CommentTok{#### Calculate the absolute percentage difference between scaled control sales and trial sales}
+\NormalTok{percentageDiff <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(scaledControlSales[, }\KeywordTok{c}\NormalTok{(}\StringTok{"YEARMONTH"}\NormalTok{, }\StringTok{"controlSales"}\NormalTok{)],measureOverTime[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store, }\KeywordTok{c}\NormalTok{(}\StringTok{"totSales"}\NormalTok{, }\StringTok{"YEARMONTH"}\NormalTok{)],}\DataTypeTok{by =} \StringTok{"YEARMONTH"}\NormalTok{)[, percentageDiff }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{abs}\NormalTok{(controlSales}\OperatorTok{-}\NormalTok{totSales)}\OperatorTok{/}\NormalTok{controlSales]}
+
+\CommentTok{#### As our null hypothesis is that the trial period is the same as the pre-trial period, }
+\CommentTok{#### let's take the standard deviation based on the scaled percentage difference in the pre-trial period}
+\NormalTok{stdDev <-}\StringTok{ }\KeywordTok{sd}\NormalTok{(percentageDiff[YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902}\NormalTok{ , percentageDiff])}
+\NormalTok{degreesOfFreedom <-}\StringTok{ }\DecValTok{7}
+\CommentTok{#### Trial and control store total sales}
+\NormalTok{measureOverTimeSales <-}\StringTok{ }\NormalTok{measureOverTime}
+\NormalTok{pastSales <-}\StringTok{ }\NormalTok{measureOverTimeSales[, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store, }\StringTok{"Trial"}\NormalTok{,}
+\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store, }\StringTok{"Control"}\NormalTok{, }\StringTok{"Other stores"}\NormalTok{))}
+\NormalTok{][, totSales }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{mean}\NormalTok{(totSales), by =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"YEARMONTH"}\NormalTok{, }\StringTok{"Store_type"}\NormalTok{)}
+\NormalTok{][, TransactionMonth }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{as.Date}\NormalTok{(}\KeywordTok{paste}\NormalTok{(YEARMONTH }\OperatorTok{%/%}\DecValTok{100}\NormalTok{, YEARMONTH }\OperatorTok{%%}\StringTok{ }\DecValTok{100}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DataTypeTok{sep =} \StringTok{"-"}\NormalTok{), }\StringTok{"%Y-%m-%d"}\NormalTok{)}
+\NormalTok{][Store_type }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Trial"}\NormalTok{, }\StringTok{"Control"}\NormalTok{), ]}
+\CommentTok{#### Control store 95th percentile}
+\NormalTok{pastSales_Controls95 <-}\StringTok{ }\NormalTok{pastSales[Store_type }\OperatorTok{==}\StringTok{ "Control"}\NormalTok{,}
+\NormalTok{][, totSales }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{totSales }\OperatorTok{*}\StringTok{ }\NormalTok{(}\DecValTok{1} \OperatorTok{+}\StringTok{ }\NormalTok{stdDev }\OperatorTok{*}\StringTok{ }\DecValTok{2}\NormalTok{)}
+\NormalTok{][, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ "Control 95th % confidence interval"}\NormalTok{]}
+\CommentTok{#### Control store 5th percentile}
+\NormalTok{pastSales_Controls5 <-}\StringTok{ }\NormalTok{pastSales[Store_type }\OperatorTok{==}\StringTok{ "Control"}\NormalTok{,}
+\NormalTok{][, totSales }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{totSales }\OperatorTok{*}\StringTok{ }\NormalTok{(}\DecValTok{1} \OperatorTok{-}\StringTok{ }\NormalTok{stdDev }\OperatorTok{*}\StringTok{ }\DecValTok{2}\NormalTok{)}
+\NormalTok{][, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ "Control 5th % confidence interval"}\NormalTok{]}
+\NormalTok{trialAssessment <-}\StringTok{ }\KeywordTok{rbind}\NormalTok{(pastSales, pastSales_Controls95, pastSales_Controls5)}
+\CommentTok{#### Plotting these in one nice graph}
+\KeywordTok{ggplot}\NormalTok{(trialAssessment, }\KeywordTok{aes}\NormalTok{(TransactionMonth, totSales, }\DataTypeTok{color =}\NormalTok{ Store_type)) }\OperatorTok{+}
+\KeywordTok{geom_rect}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ trialAssessment[ YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201905} \OperatorTok{&}\StringTok{ }\NormalTok{YEARMONTH }\OperatorTok{>}\StringTok{ }\DecValTok{201901}\NormalTok{ ,],}
+\KeywordTok{aes}\NormalTok{(}\DataTypeTok{xmin =} \KeywordTok{min}\NormalTok{(TransactionMonth), }\DataTypeTok{xmax =} \KeywordTok{max}\NormalTok{(TransactionMonth), }\DataTypeTok{ymin =} \DecValTok{0}\NormalTok{ ,}
+\DataTypeTok{ymax =} \OtherTok{Inf}\NormalTok{, }\DataTypeTok{color =} \OtherTok{NULL}\NormalTok{), }\DataTypeTok{show.legend =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{geom_line}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{linetype =}\NormalTok{ Store_type)) }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Month of operation"}\NormalTok{, }\DataTypeTok{y =} \StringTok{"Total sales"}\NormalTok{, }\DataTypeTok{title =} \StringTok{"Total sales by month"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Task2_files/figure-latex/unnamed-chunk-24-1} The
+results show that the trial in store 88 is significantly different to
+its control store in the trial period as the trial store performance
+lies outside of the 5\% to 95\% confidence interval of the control store
+in two of the three trial months. Let's have a look at assessing this
+for number of customers as well.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#### This would be a repeat of the steps before for total sales}
+\CommentTok{#### Scale pre-trial control store customers to match pre-trial trial store customers}
+\NormalTok{scalingFactorForControlCust <-}\StringTok{ }\NormalTok{preTrialMeasures[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store }\OperatorTok{&}
+\NormalTok{YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902}\NormalTok{, }\KeywordTok{sum}\NormalTok{(nCustomers)]}\OperatorTok{/}\NormalTok{preTrialMeasures[STORE_NBR }\OperatorTok{==}
+\NormalTok{control_store }\OperatorTok{&}\StringTok{ }\NormalTok{YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902}\NormalTok{, }\KeywordTok{sum}\NormalTok{(nCustomers)]}
+
+\CommentTok{#### Apply the scaling factor}
+\NormalTok{measureOverTimeCusts <-}\StringTok{ }\NormalTok{measureOverTime}
+\NormalTok{scaledControlCustomers <-}\StringTok{ }\NormalTok{measureOverTimeCusts[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store,}
+\NormalTok{][ , controlCustomers }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{nCustomers }\OperatorTok{*}\StringTok{ }\NormalTok{scalingFactorForControlCust}
+\NormalTok{][, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store, }\StringTok{"Trial"}\NormalTok{,}
+\KeywordTok{ifelse}\NormalTok{(STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{control_store,}\StringTok{"Control"}\NormalTok{, }\StringTok{"Other stores"}\NormalTok{))}
+\NormalTok{]}
+\CommentTok{#### Calculate the absolute percentage difference between scaled control sales and trial sales}
+\NormalTok{percentageDiff <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(scaledControlCustomers[, }\KeywordTok{c}\NormalTok{(}\StringTok{"YEARMONTH"}\NormalTok{,}\StringTok{"controlCustomers"}\NormalTok{)],measureOverTime[STORE_NBR }\OperatorTok{==}\StringTok{ }\NormalTok{trial_store, }\KeywordTok{c}\NormalTok{(}\StringTok{"nCustomers"}\NormalTok{, }\StringTok{"YEARMONTH"}\NormalTok{)],}
+\DataTypeTok{by =} \StringTok{"YEARMONTH"}\NormalTok{)[, percentageDiff }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{abs}\NormalTok{(controlCustomers}\OperatorTok{-}\NormalTok{nCustomers)}\OperatorTok{/}\NormalTok{controlCustomers]}
+
+\CommentTok{#### As our null hypothesis is that the trial period is the same as the pre-trial}
+\CommentTok{#### period, let's take the standard deviation based on the scaled percentage #### difference in the pre-trial period}
+
+\NormalTok{stdDev <-}\StringTok{ }\KeywordTok{sd}\NormalTok{(percentageDiff[YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201902}\NormalTok{ , percentageDiff])}
+\NormalTok{degreesOfFreedom <-}\StringTok{ }\DecValTok{7} 
+\CommentTok{# note that there are 8 months in the pre-trial period hence 8 - 1 = 7 degrees of freedom}
+\CommentTok{#### Trial and control store number of customers}
+\NormalTok{pastCustomers <-}\StringTok{ }\NormalTok{measureOverTimeCusts[, nCusts }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\KeywordTok{mean}\NormalTok{(nCustomers), by =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"YEARMONTH"}\NormalTok{, }\StringTok{"Store_type"}\NormalTok{)}
+\NormalTok{][Store_type }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Trial"}\NormalTok{, }\StringTok{"Control"}\NormalTok{), ]}
+
+\CommentTok{#### Control store 95th percentile}
+\NormalTok{pastCustomers_Controls95 <-}\StringTok{ }\NormalTok{pastCustomers[Store_type }\OperatorTok{==}\StringTok{ "Control"}\NormalTok{,}
+\NormalTok{][, nCusts }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{nCusts }\OperatorTok{*}\StringTok{ }\NormalTok{(}\DecValTok{1} \OperatorTok{+}\StringTok{ }\NormalTok{stdDev }\OperatorTok{*}\StringTok{ }\DecValTok{2}\NormalTok{)}
+\NormalTok{][, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ "Control 95th % confidence interval"}\NormalTok{]}
+\CommentTok{#### Control store 5th percentile}
+\NormalTok{pastCustomers_Controls5 <-}\StringTok{ }\NormalTok{pastCustomers[Store_type }\OperatorTok{==}\StringTok{ "Control"}\NormalTok{,}
+\NormalTok{][, nCusts }\OperatorTok{:}\ErrorTok{=}\StringTok{ }\NormalTok{nCusts }\OperatorTok{*}\StringTok{ }\NormalTok{(}\DecValTok{1} \OperatorTok{-}\StringTok{ }\NormalTok{stdDev }\OperatorTok{*}\StringTok{ }\DecValTok{2}\NormalTok{)}
+\NormalTok{][, Store_type }\OperatorTok{:}\ErrorTok{=}\StringTok{ "Control 5th % confidence interval"}\NormalTok{]}
+\CommentTok{#### Combine the tables pastSales, pastSales_Controls95, pastSales_Controls5}
+\NormalTok{trialAssessment <-}\StringTok{ }\KeywordTok{rbind}\NormalTok{(pastCustomers, pastCustomers_Controls95,pastCustomers_Controls5)}
+\CommentTok{#### Plotting these in one nice graph}
+\KeywordTok{ggplot}\NormalTok{(trialAssessment, }\KeywordTok{aes}\NormalTok{(TransactionMonth, nCusts, }\DataTypeTok{color =}\NormalTok{ Store_type)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_rect}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ trialAssessment[ YEARMONTH }\OperatorTok{<}\StringTok{ }\DecValTok{201905} \OperatorTok{&}\StringTok{ }\NormalTok{YEARMONTH }\OperatorTok{>}\StringTok{ }\DecValTok{201901}\NormalTok{ ,],}
+\KeywordTok{aes}\NormalTok{(}\DataTypeTok{xmin =} \KeywordTok{min}\NormalTok{(TransactionMonth), }\DataTypeTok{xmax =} \KeywordTok{max}\NormalTok{(TransactionMonth), }\DataTypeTok{ymin =} \DecValTok{0}\NormalTok{ ,}
+\DataTypeTok{ymax =} \OtherTok{Inf}\NormalTok{, }\DataTypeTok{color =} \OtherTok{NULL}\NormalTok{), }\DataTypeTok{show.legend =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_line}\NormalTok{() }\OperatorTok{+}\StringTok{ }
+\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Month of operation"}\NormalTok{, }\DataTypeTok{y =} \StringTok{"Total number of customers"}\NormalTok{, }\DataTypeTok{title =} \StringTok{"Total number of customers by month"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Task2_files/figure-latex/unnamed-chunk-25-1} Total
+number of customers in the trial period for the trial store is
+significantly higher than the control store for two out of three months,
+which indicates a positive trial effect. \#\# Conclusion Good work!
+We've found control stores 233, 155, 237 for trial stores 77, 86 and 88
+respectively. The results for trial stores 77 and 88 during the trial
+period show a significant difference in at least two of the three trial
+months but this is not the case for trial store 86. We can check with
+the client if the implementation of the trial was different in trial
+store 86 but overall, the trial shows a significant increase in sales.
+Now that we have finished our analysis, we can prepare our presentation
+to the Category Manager.
+
+\end{document}
