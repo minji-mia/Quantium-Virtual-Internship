@@ -3,6 +3,9 @@
 Virtual Internship Program to explore the power of data.
 This program is provided by Quantium.
 
+## [Certificate](https://insidesherpa.s3.amazonaws.com/completion-certificates/Quantium/NkaC7knWtjSbi6aYv_Quantium_zEdLKmMSBsBPSazdf_completion_certificate.pdf) of Completion
+![image](https://user-images.githubusercontent.com/52568892/97493639-46654300-1933-11eb-85d6-b2a93f0ca064.png)
+
 ## Who is Quantium?
 
 Quantium is a leading data science and AI Firm, founded in Australia in 2002 and offers a 17-year track record of innovation in data science.
