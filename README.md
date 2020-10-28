@@ -56,4 +56,4 @@ https://www.theforage.com/virtual-internships/prototype/NkaC7knWtjSbi6aYv/Data%2
 
 ## License
 
-LICENSE
+[MIT}https://github.com/minji-mia/Quantium-Virtual-Internship/blob/main/LICENSE
