@@ -1,6 +1,7 @@
 # Quantium Data Analytics Virtual Internship
 
 Virtual Internship Program to explore the power of data.
+This program is provided by Quantium.
 
 ## Who is Quantium?
 
