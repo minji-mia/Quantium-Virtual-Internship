@@ -53,3 +53,7 @@ install.packages("readr")
 
 ## Reference
 https://www.theforage.com/virtual-internships/prototype/NkaC7knWtjSbi6aYv/Data%20Analytics%20Virtual%20Experience%20Program
+
+## License
+
+LICENSE
