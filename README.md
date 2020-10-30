@@ -1,6 +1,5 @@
 # Quantium Data Analytics Virtual Internship
 
-Virtual Internship Program to explore the power of data.
 Quantium provides this program.
 
 ## [Certificate of Completion](https://insidesherpa.s3.amazonaws.com/completion-certificates/Quantium/NkaC7knWtjSbi6aYv_Quantium_zEdLKmMSBsBPSazdf_completion_certificate.pdf) 
