@@ -52,19 +52,19 @@ install.packages("readr")
 3. Mainstream, mid-age, and young singles and couples are also more likely to pay more per packet of chips. This is indicative of impulse buying behavior.
 4. Mainstream young singles and couples are 23% more likely to purchase Tyrrells chips compared to the rest of the population. 
 
-**Thus, the Category Manager may want to increase the category’s performance by off-locating some Tyrrells and smaller packs of chips in discretionary space near segments  where young singles and couples frequent more often to increase visibility and impulse behavior.**
+**Thus, the Category Manager may want to increase the category’s performance by off-locating some Tyrrells and smaller packs of chips in discretionary space near segments where young singles and couples frequent more often to increase visibility and impulse behavior.**
 
 ## Task 2
 
-+ Create a measure to compare different control stores to each of the trial stores to do this write a function to reduce having to re-do the analysis for each trial store. 
-+ Consider using Pearson correlations or a metric such as a magnitude distance e.g. 1- (Observed distance – minimum distance)/(Maximum distance – minimum distance) as a measure.  + Compare each trial and control pair during the trial period. 
++ Create a measure to compare different control stores to each of the trial stores to do this, write a function to reduce having to re-do the analysis for each trial store. 
++ Consider using Pearson correlations or a metric such as a magnitude distance e.g., 1- (Observed distance – minimum distance)/(Maximum distance – minimum distance) as a measure.  + Compare each trial and control pair during the trial period. 
 
 ### Insights
 
-We’ve found control stores 233, 155, 237 for trial stores 77, 86 and 88 respectively.
+We’ve found control stores 233, 155, 237 for trial stores 77, 86, and 88 respectively.
 
-1. The results for trial stores 77 and 88 during the trial period show a significant difference in at least two of the three trial months but this is not the case for trial store 86. 
-2. We can check with the client if the implementation of the trial was different in trial store 86 but overall, the trial shows a significant increase in sales. 
+1. The results for trial stores 77 and 88 during the trial period show a significant difference in at least two of the three trial months, but this is not the case for trial store 86. 
+2. We can check with the client if the implementation of the trial was different in trial store 86, but overall, the trial shows a significant increase in sales. 
 
 ## Reference
 https://www.theforage.com/virtual-internships/prototype/NkaC7knWtjSbi6aYv/Data%20Analytics%20Virtual%20Experience%20Program
