@@ -67,8 +67,15 @@ We’ve found control stores 233, 155, 237 for trial stores 77, 86, and 88 respe
 2. We can check with the client if the implementation of the trial was different in trial store 86, but overall, the trial shows a significant increase in sales. 
 
 ## Reference
+
 https://www.theforage.com/virtual-internships/prototype/NkaC7knWtjSbi6aYv/Data%20Analytics%20Virtual%20Experience%20Program
+
+
+## Built with
+
+- [R](https://www.r-project.org/)
+- [R studio](https://rstudio.com/)
 
 ## License
 
-[MIT](https://github.com/minji-mia/Quantium-Virtual-Internship/blob/main/LICENSE)
+This project is licensed under the [MIT](https://github.com/minji-mia/Quantium-Virtual-Internship/blob/main/LICENSE) License
